@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8451BD041C6BA20B0075AF01 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451BD031C6BA20B0075AF01 /* WebViewController.swift */; };
+		8451BD061C6BA8EB0075AF01 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451BD051C6BA8EB0075AF01 /* TableViewController.swift */; };
+		8451BD081C6BAAE10075AF01 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8451BD071C6BAAE10075AF01 /* TableViewCell.swift */; };
+		84693DA51C6BB2E300F8AE94 /* human.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84693DA41C6BB2E300F8AE94 /* human.swift */; };
 		84AB9A111C6A66FF007BCA9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AB9A101C6A66FF007BCA9F /* AppDelegate.swift */; };
 		84AB9A131C6A66FF007BCA9F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84AB9A121C6A66FF007BCA9F /* ViewController.swift */; };
 		84AB9A161C6A66FF007BCA9F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84AB9A141C6A66FF007BCA9F /* Main.storyboard */; };
@@ -34,6 +38,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8451BD031C6BA20B0075AF01 /* WebViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		8451BD051C6BA8EB0075AF01 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		8451BD071C6BAAE10075AF01 /* TableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
+		84693DA41C6BB2E300F8AE94 /* human.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = human.swift; sourceTree = "<group>"; };
 		84AB9A0D1C6A66FF007BCA9F /* lab1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = lab1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84AB9A101C6A66FF007BCA9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84AB9A121C6A66FF007BCA9F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -99,6 +107,10 @@
 			children = (
 				84AB9A101C6A66FF007BCA9F /* AppDelegate.swift */,
 				84AB9A121C6A66FF007BCA9F /* ViewController.swift */,
+				8451BD031C6BA20B0075AF01 /* WebViewController.swift */,
+				8451BD051C6BA8EB0075AF01 /* TableViewController.swift */,
+				8451BD071C6BAAE10075AF01 /* TableViewCell.swift */,
+				84693DA41C6BB2E300F8AE94 /* human.swift */,
 				84AB9A141C6A66FF007BCA9F /* Main.storyboard */,
 				84AB9A171C6A66FF007BCA9F /* Assets.xcassets */,
 				84AB9A191C6A66FF007BCA9F /* LaunchScreen.storyboard */,
@@ -193,6 +205,7 @@
 				TargetAttributes = {
 					84AB9A0C1C6A66FF007BCA9F = {
 						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = F7WCVBCB5Y;
 					};
 					84AB9A201C6A66FF007BCA9F = {
 						CreatedOnToolsVersion = 7.2.1;
@@ -256,8 +269,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8451BD081C6BAAE10075AF01 /* TableViewCell.swift in Sources */,
 				84AB9A131C6A66FF007BCA9F /* ViewController.swift in Sources */,
+				8451BD041C6BA20B0075AF01 /* WebViewController.swift in Sources */,
 				84AB9A111C6A66FF007BCA9F /* AppDelegate.swift in Sources */,
+				8451BD061C6BA8EB0075AF01 /* TableViewController.swift in Sources */,
+				84693DA51C6BB2E300F8AE94 /* human.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,9 +416,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = lab1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-51004.lab1";
+				PRODUCT_BUNDLE_IDENTIFIER = com.happymilk.lab1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -410,9 +428,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = lab1/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "-51004.lab1";
+				PRODUCT_BUNDLE_IDENTIFIER = com.happymilk.lab1;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -484,6 +503,7 @@
 				84AB9A371C6A66FF007BCA9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84AB9A381C6A66FF007BCA9F /* Build configuration list for PBXNativeTarget "lab1Tests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +512,7 @@
 				84AB9A3A1C6A66FF007BCA9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		84AB9A3B1C6A66FF007BCA9F /* Build configuration list for PBXNativeTarget "lab1UITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +521,7 @@
 				84AB9A3D1C6A66FF007BCA9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
